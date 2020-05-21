@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.box {
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid royalblue;
+}
+
+.box h2 {
+  margin: 0 0 40px;
+  padding: 0;
+  color: orangered;
+  text-transform: uppercase;
+}
+
+.box input {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  padding: 10px 10px 10px 0;
+  margin-bottom: 30px;
+  border-bottom: 1.5px solid black;
+}
+
+.box input[type="submit"] {
+  border-bottom: none;
+  cursor: pointer;
+  background: orange;
+  color: white;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.box form div {
+  position: relative;
+}
+
+.box form div label {
+  position: absolute;
+  top: 10px;
+  pointer-events: none;
+  left: 0;
+  color: #999;
+  transition: 0.4s;
+}
+
+
+.box input:focus ~ label,
+.box input:valid ~ label {
+  top: -12px;
+  color: red;
+  font-size: 14.5px;
+  font-weight: bold;
+}
+
+.box input:focus,
+.box input:valid {
+  border-bottom: 1.5px solid red;
+}
+
+.box input[type="submit"] {
+  border-bottom: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.nano {
+  /* Add the blur effect */
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+}
